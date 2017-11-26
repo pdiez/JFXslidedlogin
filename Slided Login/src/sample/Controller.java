@@ -3,6 +3,7 @@ package sample;
 import javafx.animation.FadeTransition;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.TextField;
 import javafx.scene.layout.Pane;
 import javafx.util.Duration;
 
@@ -23,20 +24,40 @@ public class Controller implements Initializable {
     @FXML
     private Pane pane4;
     
+    @FXML
+    private TextField bg1;
+    
+    @FXML
+    private TextField bg2;
+    
+    @FXML
+    private TextField bg3;
+    
+    @FXML
+    private TextField bg4;
+    
+    
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 
-        pane1.setStyle("-fx-background-image: url(\"/sample/1.jpg\")");
+        /*pane1.setStyle("-fx-background-image: url(\"/sample/1.jpg\")");
         pane2.setStyle("-fx-background-image: url(\"/sample/2.jpg\")");
         pane3.setStyle("-fx-background-image: url(\"/sample/3.jpg\")");
-        pane4.setStyle("-fx-background-image: url(\"/sample/4.jpg\")");
+        pane4.setStyle("-fx-background-image: url(\"/sample/4.jpg\")");*/
+        
+    
 
-
-        backgroundAnimation();
+       
 
     }
 
-    private void backgroundAnimation() {
+    public void backgroundAnimation() {
+
+        pane1.setStyle("-fx-background-color: #"+bg1.getText());
+        pane2.setStyle("-fx-background-color: #"+bg2.getText());
+        pane3.setStyle("-fx-background-color: #"+bg3.getText());
+        pane4.setStyle("-fx-background-color: #"+bg4.getText());
+
 
         FadeTransition fadeTransition=new FadeTransition(Duration.seconds(3),pane4);
         fadeTransition.setFromValue(1);
