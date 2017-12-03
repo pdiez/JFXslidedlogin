@@ -14,7 +14,7 @@
       <Pane fx:id="pane2" prefHeight="515.0" prefWidth="915.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
       <Pane fx:id="pane3" layoutX="10.0" layoutY="10.0" prefHeight="515.0" prefWidth="915.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
       <Pane fx:id="pane4" layoutX="10.0" layoutY="10.0" prefHeight="515.0" prefWidth="915.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
-      <Pane prefHeight="410.0" prefWidth="290.0" style="-fx-background-color: #fff; -fx-background-radius: 50px;">
+      <Pane layoutX="318.0" layoutY="45.0" prefHeight="410.0" prefWidth="290.0" style="-fx-background-color: #fff; -fx-background-radius: 50px;">
          <effect>
             <DropShadow color="#797979" />
          </effect>
